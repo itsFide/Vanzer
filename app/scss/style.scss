@@ -14,7 +14,7 @@ a{
 }
 body{
     font-family: 'Avenir Bold';
-
+    overflow: hidden;
 }
 .container{
     max-width: 1200px;
@@ -167,6 +167,7 @@ body{
 .body-scroll-nav{
     position: fixed;
     left: 50px;
+    z-index: 10;
     top: 25%;
 }
 .scroll-item .scroll-num{
@@ -266,7 +267,8 @@ body{
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
-    
+    max-height: 100vh;
+    overflow: scroll;
     &-inner{
         position: relative;
         padding-top: 430px;
@@ -331,6 +333,8 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    max-height: 100vh;
+    overflow-y: scroll;
     &-inner{
         padding-top: 275px;
         padding-bottom: 365px;
@@ -449,6 +453,8 @@ body{
 }
 // Portfolio
 .portfolio{
+    max-height: 100vh;
+    overflow-y: scroll;
     &-inner{
         padding-top: 195px;
         padding-bottom: 195px;
@@ -563,7 +569,8 @@ body{
 // Blog
 .blog{
     overflow: hidden;
-
+    max-height: 100vh;
+    overflow-y: scroll;
     
     &-inner{
         padding-top: 250px;
@@ -672,7 +679,8 @@ body{
 }
 // Contact
 .contact{
-
+    max-height: 100vh;
+    overflow-y: scroll;
     &-inner{
         display: flex;
         justify-content: space-between;
