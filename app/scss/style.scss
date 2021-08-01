@@ -268,7 +268,7 @@ body{
     background-position:center;
     background-repeat: no-repeat;
     max-height: 100vh;
-    overflow: scroll;
+    overflow-y: scroll;
     &-inner{
         position: relative;
         padding-top: 430px;
